@@ -7,7 +7,7 @@ before_install:
   - docker build -t junior-elf/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true Junior-elf/docker-react npm run test
+  - docker run -e CI=true junior-elf/docker-react npm run test
 
 deploy:
   provider: elasticbeanstalk
