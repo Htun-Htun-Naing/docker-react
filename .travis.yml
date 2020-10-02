@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Junior-elf/docker-react -f Dockerfile.dev .
+  - docker build -t junior-elf/docker-react -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true Junior-elf/docker-react npm run test
